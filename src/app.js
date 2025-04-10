@@ -37,8 +37,15 @@ import UserRoutes from "./routes/user.routes.js"
 
 
 app.get('/', (req, res) => {
-    res.send('Success !!')
-})
+    return res.status(200).json({
+      status: "success",
+      message: "Restaurant Table Booking Backend is live ✅",
+      timestamp: new Date().toISOString(),
+      author: "Vaibhav Pant",
+      documentation: "https://github.com/Vaibhav-Pant/RestaurantTableBooking"
+    });
+  });
+  
 
 
 app.use("/api/v1/reservations", ReservationRoutes);

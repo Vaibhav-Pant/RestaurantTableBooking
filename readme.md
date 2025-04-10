@@ -135,7 +135,7 @@ POST /api/v1/reservations
 
 ```json
 {
-  "restaurantId": "restaurant_id_here",   // Get id from /getAllRestaurant API call
+  "restaurantId": "restaurant_id_here",   # Get id from /getAllRestaurant API call
   "bookingDate": "2025-04-15",
   "bookingTime": "19:30",
   "numberOfGuests": 4
@@ -171,6 +171,14 @@ DELETE /api/v1/reservations/:reservationId
 - Worker (`worker.js`) not running on Vercel – it must be hosted separately.
 - Email is sent directly for now until the async worker is deployed.
 
+## 🧪 Testing the API
+
+You can use Postman or any other API testing tool (like Insomnia or cURL) to test the APIs.
+
+- Import the provided Postman collection (if available) or manually create requests based on the API documentation.
+
+- For authentication endpoints (Login/Register), make sure to obtain the access token and include it in the Authorization header for subsequent requests.
+
 ## 🤝 **Contributing**
 
 Contributions are welcome! Feel free to:
@@ -183,5 +191,3 @@ Contributions are welcome! Feel free to:
 
 If you like this project, please consider giving it a ⭐ on GitHub. It really helps and keeps the motivation going!
 ```
-
-You can now paste this into your GitHub `README.md`. This version includes copy-friendly code blocks, proper indentation, and clear section headings for readability.

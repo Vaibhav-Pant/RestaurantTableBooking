@@ -1,7 +1,7 @@
 // require("dotenv").config({ path: "./env" });
-import connectDB from "./config/db.js";
+import connectDB from "../src/config/db.js";
 import dotenv from 'dotenv'
-import app from './app.js'
+import app from '../src/app.js'
 
 // Apply changes in package.json
 dotenv.config({
